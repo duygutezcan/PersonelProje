@@ -1,0 +1,27 @@
+﻿@model ProjeYeni.Models.EgitimModel
+
+@{
+    ViewData["Title"] = "Ekle";
+}
+
+<h1>Ekleme İşlemi</h1>
+<div class="row">
+    <div class="col-md-5">
+        <form method="post">
+            <div>
+                <label>EklenecekId</label>
+                <input class="form-control" readonly value="@Model.SonId" type="text" name="SonId" />
+            </div>
+            <div>
+                <label>Id</label>
+                <input class="form-control" readonly type="text" name="Egitim.Id" />
+            </div>
+            <div>
+                <label>Ad</label>
+                <input class="form-control" type="text" value="" name="Egitim.EgitimAd" />
+            </div>
+            <input class="btn btn-primary" type="submit" value="Ekle" />
+        </form>
+    </div>
+</div>
+
